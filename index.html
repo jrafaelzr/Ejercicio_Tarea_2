@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Notas</title>
+    <link rel="stylesheet" href="js/java.js">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Cálculo de Notas</h3>
+        <form id="gradeForm" class="mt-4">
+            <div class="form-group">
+                <label for="nota1">Primer Parcial (Máximo 30%):</label>
+                <input type="number" class="form-control" id="nota1" placeholder="Ingrese la nota del primer parcial" required>
+            </div>
+            <div class="form-group">
+                <label for="nota2">Segundo Parcial (Máximo 30%):</label>
+                <input type="number" class="form-control" id="nota2" placeholder="Ingrese la nota del segundo parcial" required>
+            </div>
+            <div class="form-group">
+                <label for="nota3">Tercer Parcial (Máximo 40%):</label>
+                <input type="number" class="form-control" id="nota3" placeholder="Ingrese la nota del tercer parcial" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calcularNotas()">Calcular Nota Final</button>
+            <button type="button" class="btn btn-secondary" onclick="limpiarCampos()">Limpiar Campos</button>
+        </form>
+        <div class="mt-3" id="result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/java.js"></script>
+</body>
+</html>
